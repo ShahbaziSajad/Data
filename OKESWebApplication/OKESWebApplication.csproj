@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+	  <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+	  <RuntimeFrameworkVersion>2.1.3</RuntimeFrameworkVersion>
+	  <UserSecretsId>2d00596e-b0d1-491f-be4a-474c3a9fb335</UserSecretsId>
+	  <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <StartupObject>OKESWebApplication.Program</StartupObject>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.9" />
+    <PackageReference Include="OKES.Core.Data" Version="1.3.0" />
+    <PackageReference Include="OKES.Core.Data.Abstractions" Version="1.4.0" />
+    <PackageReference Include="OKES.Core.Data.Dapper" Version="1.2.0" />
+    <PackageReference Include="OKES.Core.Data.Entities.Abstractions" Version="1.4.0" />
+    <PackageReference Include="OKES.Core.Data.EntityFramework" Version="1.6.2" />
+    <PackageReference Include="OKES.Core.Data.EntityFramework.SqlServer" Version="1.3.0" />
+    <PackageReference Include="OKES.Core.Data.Mongo.Abstractions" Version="1.5.0" />
+    <PackageReference Include="OKES.Core.Data.MongoDriver" Version="1.8.0" />
+    <PackageReference Include="OKES.Core.Data.MongoDriver.Mongodb" Version="1.5.0" />
+    <PackageReference Include="OKES.Core.Data.Sql.Abstractions" Version="1.3.0" />
+    <PackageReference Include="OKES.Core.Infrastructure" Version="1.5.0" />
+    <PackageReference Include="OKES.Core.Mvc" Version="1.3.0" />
+    <PackageReference Include="OKES.Core.Pattern.Abstractions" Version="1.2.0" />
+    <PackageReference Include="OKES.Core.Security" Version="1.1.0" />
+    <PackageReference Include="OKES.Core.Security.Abstractions" Version="1.0.0" />
+    <PackageReference Include="OKES.Core.WebApplication" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OKESA.PaymentService.Api.Version1\OKESA.PaymentService.Api.Version1.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.SmsProviders.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

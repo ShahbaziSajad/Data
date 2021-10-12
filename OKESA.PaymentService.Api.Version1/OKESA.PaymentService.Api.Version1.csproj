@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OKES.Core.Mvc.Infrastructure" Version="1.3.0" />
+    <PackageReference Include="OKES.Core.Security" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OKESA.Notification.Provider.Sms\OKESA.Notification.Provider.Sms.csproj" />
+    <ProjectReference Include="..\OKESA.PaymentService.Saman.PAYA\OKESA.PaymentService.Saman.PAYA.csproj" />
+  </ItemGroup>
+
+</Project>
